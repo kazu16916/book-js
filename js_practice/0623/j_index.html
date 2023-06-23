@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3-04_comparison</title>
+<link href="../../_common/images/favicon.ico" rel="shortcut icon">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+<link href="../../_common/css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="container">
+<h1>数当てゲーム</h1>
+<h2>さまざまな比較演算子を使用する</h2>
+</div><!-- /.container -->
+</header>
+<main>
+<div class="container">
+<section>
+    
+</section>
+</div><!-- /.container -->
+</main>
+<footer>
+<div class="container">
+<p>JavaScript Samples</p>
+</div><!-- /.container -->
+</footer>
+<script>
+'use strict';
+var janken=['グー','チョキ','パー'];
+const you_number = Math.floor(Math.random()*4);
+const you = janken[you_number];
+const me = (window.prompt('グー,チョキ,パーのどれかを入力してください'));
+let message;
+if (you === me) {
+    message = 'あいこです'
+}else if (you == 'グー'&&me == 'チョキ'){
+    message = '相手はグーで負けです'
+}else if (you =='グー'&&me == 'パー'){
+    message = '相手はグーで勝ちです'
+}else if (you == 'パー'&&me== 'グー'){
+    message = '相手はパーで負けです'
+}else if (you == 'パー'&&me == 'チョキ'){
+    message = '相手はパーで勝ちです'
+}else if (you == 'チョキ'&&me == 'グー'){
+    message = '相手はチョキで勝ちです'
+}else if (you == 'チョキ'&&me== 'パー'){
+    message = '相手はチョキで負けです'
+}
+window.alert(message);
+
+
+
+</script>
+</body>
+</html>

@@ -29,9 +29,22 @@
 </footer>
 <script>
 'use strict';
-
-let answer = window.prompt('ヘルプを見ますか？');
+// 変数宣言
+let answer = 'アンサー'
+// answerの書き換え
+answer = 'クエスチョン'
 console.log(answer);
+if (window.confirm('ゲームスタート！準備はいい？')) {
+    let answer = 'yes'
+    
+    console.log(answer);
+} else {
+    let answer = 'no'
+    console.log(answer);
+}
+ 
+
+
 </script>
 </body>
 </html>
