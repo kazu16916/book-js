@@ -12,5 +12,8 @@ function fizzbuzz(num){
         return num;
     }
 }
-
-fizzbuzz(15);
+let i =1;
+while (i <= 10000){
+    console.log(fizzbuzz(i));
+    i+=1
+}
